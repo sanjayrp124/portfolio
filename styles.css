@@ -1,0 +1,244 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+img{
+    width: 100%;
+}
+#page-1{
+    display: grid;
+    overflow: visible;
+    grid-template-columns:60% 40%;
+    background-color: brown;
+}
+
+.image{
+    padding: 20px;
+}
+
+.content{
+    padding: 60px 20px;
+    text-align: left;
+}
+
+.nav-bar{
+    display:flex;
+    justify-content: left;
+    background-color: gold;
+}
+
+li{
+    list-style-type: none;
+    margin: 1.2rem 2rem;
+    font-weight: 600;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+.content h1,h2{
+    color: gold;
+    line-height: 1.4;
+}
+
+.heading{
+    margin-top: 40px;
+}
+.name{
+    font-size: 40px;
+    color:#fff;
+}
+.suppoting-text{
+    margin-bottom: 40px;
+}
+
+.content .content-text{
+    color: rgb(75, 160, 199);
+    font-size: medium;
+    font-weight: 400;
+    line-height: 1.5;
+    
+}
+
+.contact,
+.button{
+    cursor: pointer;
+    border-radius: 6px;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: gold;
+    box-shadow: 8px 8px 20px rgba(0,0,0,0.3);
+}
+
+@media (max-width:900px){
+    #page-1{
+        display: block;
+    }
+    .content{
+        padding: 10px 40px;
+        text-align: center;
+    }
+    .nav{
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        right: 0%;
+    }
+    .image{
+    position: relative;
+    top: 40px;
+    padding-top: 40px;
+    }
+}
+
+
+/* top drop menu */
+.side-bar{
+    background-color: gold;
+    display: none;
+    margin-bottom: 40px;
+    padding-top: 0%;
+}
+.bar-div{
+    display: block;
+}
+.sideitem-div{
+    display: none;
+}
+.visible{
+    display: block;
+}
+
+.li-item:hover{
+    background-color: gray;
+}
+
+@media(max-width:540px){
+    .side-bar{
+        display: block;
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        left: 0%;
+    }
+    .nav-bar{
+        display: none;
+    }
+    .sideitem-div{
+        position: relative;
+        background-color: gold;
+    }
+}
+
+
+/* 2nd page */
+
+#about{
+    width: 100%;
+    background-color: gold;
+    height:auto;
+    padding: 40px 20px;
+}
+
+.container-box{
+    display: grid;
+    overflow: visible;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.card{
+    margin: 10px 20px;
+    background-color: brown;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.card h1{
+    color: gold;
+    text-align: center;
+    margin: 20px 0px 10px 0px;
+}
+
+.card p{
+    text-align:center;
+    padding: 0px 20px 10px 20px;
+    font-weight: 600;
+}
+
+.card p:hover{
+    color: #fff;
+}
+
+.card .icon{
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+.icon:hover{
+    color: gold;
+}
+
+@media(max-width: 740px){
+    .container-box{
+        display: block;
+    }
+}
+
+
+/* 3rd page */
+
+ #contact{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    overflow: hidden;
+    background-color: brown;
+
+}
+
+.contact-heading{
+    color: gold;
+    font-weight: 800;
+    margin-bottom: 40px;
+    
+}
+.details{
+    padding: 40px 10px 20px 30px;
+}
+.details h2{
+    color: #fff;
+}
+
+.details h4{
+    margin-top: 40px;
+    line-height: 1.4;
+}
+
+@media (max-width:740px){
+    #contact{
+        display: block;
+    }
+}
+
+/* footer */
+ footer{
+     background-color: darkgrey;
+     padding: 20px 40px;
+     text-align: center;
+     color: #000;
+
+ }
+
+ footer:hover{
+     color: #fff;
+ }
+
+ span #date-time{
+     font-size: 14px;
+ }
